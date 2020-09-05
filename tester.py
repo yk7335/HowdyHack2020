@@ -38,7 +38,7 @@ nltk.download('wordnet')
 from nltk.corpus import wordnet
 #Creating a list 
 synonyms = []
-for syn in wordnet.synsets("bitch"):
+for syn in wordnet.synsets("sad"):
     for lm in syn.lemmas():
              synonyms.append(lm.name())#adding into synonyms
 print (set(synonyms))
