@@ -36,7 +36,6 @@ def GetSongScore():
     for i in range(49):
         songsStringList[i] = GetSongToString(str(songList[i].title), str(songList[i].artist))
     
-
     for i in range(49):
         songScoreList[i] =  ParseEntry(songsStringList[i])    
             
