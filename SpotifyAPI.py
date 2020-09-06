@@ -9,7 +9,17 @@ songScoreList = []
 songsStringList = []
 TopThreeSongs = []
 
+<<<<<<< HEAD
+# def get_Artists():
+#     while(len(songArtist) < 3):
+#         artistname = str(input("Enter Artist: "))
+#         songArtist.append(artistname)
+
+
+def MakeSongList():
+=======
 def MakeSongList(songArtist):
+>>>>>>> 1f7e42834b389a1f25a6e72d2dc98ff3deb3bba2
     for i in songArtist:
         artist = genius.search_artist(i, max_songs=50, sort="title")
         temp = random.randint(0,11)
@@ -31,7 +41,14 @@ def GetSongToString(SongTitle, SongArtist):
 
 
 def GetSongScore():
+<<<<<<< HEAD
+    get_Artists()
+    MakeSongList()
+    for i in range (len(songsStringList)-1):
+        songsStringList[i] = GetSongToString(str(songList[i].title), str(songList[i].artist))
+=======
     MakeSongList(songArtist)
+>>>>>>> 1f7e42834b389a1f25a6e72d2dc98ff3deb3bba2
     
     for i in range(49):
         songsStringList[i] = GetSongToString(str(songList[i].title), str(songList[i].artist))
