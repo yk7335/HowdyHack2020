@@ -26,7 +26,7 @@ def MakeSongList():
                 temp2 += 1
 
 get_Artists()
-#song = genius.search_song("Marvins Room", str(songList[0].artist))
+
 MakeSongList()
 
 def GetSongToString(SongTitle, SongArtist):
