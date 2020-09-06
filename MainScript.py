@@ -9,10 +9,6 @@ from nltk.corpus import wordnet
 def LookThisUp(dictionary,string):
     return dictionary.get(string)
     
-
-def takeJournalEntry():
-    Entry = input("Tell us about your day: ")
-    return Entry
     
 
 
@@ -54,10 +50,6 @@ def ParseEntry(string):
 
 
 
-EntryScore = 0
-Entry = takeJournalEntry()
-EntryScore = ParseEntry(Entry)
-print(EntryScore)
 
 
 

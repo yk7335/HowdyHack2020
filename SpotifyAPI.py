@@ -38,7 +38,7 @@ def GetSongToString(SongTitle, SongArtist):
 def GetSongScore():
     get_Artists()
     MakeSongList()
-    for i in range len(songStringList)-1:
+    for i in range len(songsStringList)-1:
         songsStringList[i] = GetSongToString(str(songList[i].title), str(songList[i].artist))
     
     for i in range len(songScoreList)-1:
