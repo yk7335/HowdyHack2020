@@ -26,15 +26,15 @@ def myclick():
     EntryScore = ParseEntry(Entry)
     print(EntryScore)
 def myclick2():
-    Entry = ent.get()
-    EntryScore = ParseEntry(Entry)
-    print(EntryScore)
+    return
+    # Entry = ent.get()
+    # EntryScore = ParseEntry(Entry)
+    # print(EntryScore)
+
 
 
 mutbut = Button(root,text = 'click me for inputing your journals', command = myclick)
 mutbut2 = Button(root,text = 'click me for inputing your preferred artists', command = myclick2)
 mutbut.pack()
 mutbut2.pack()
-
-
 root.mainloop()

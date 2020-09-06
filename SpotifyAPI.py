@@ -8,10 +8,10 @@ genius = lyricsgenius.Genius("lhTCJEt_2R38qM9LC4b_TrPjurZL0Rwfljyp6J1C0IoLMG3le-
 songScoreList = []
 songsStringList = []
 
-def get_Artists():
-    while(len(songArtist) < 3):
-        artistname = str(input("Enter Artist: "))
-        songArtist.append(artistname)
+# def get_Artists():
+#     while(len(songArtist) < 3):
+#         artistname = str(input("Enter Artist: "))
+#         songArtist.append(artistname)
 
 
 def MakeSongList():
@@ -38,7 +38,7 @@ def GetSongToString(SongTitle, SongArtist):
 def GetSongScore():
     get_Artists()
     MakeSongList()
-    for i in range len(songsStringList)-1:
+    for i in range (len(songsStringList)-1):
         songsStringList[i] = GetSongToString(str(songList[i].title), str(songList[i].artist))
     
     for i in range len(songScoreList)-1:
