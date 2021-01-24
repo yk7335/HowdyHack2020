@@ -1,11 +1,13 @@
 # HowdyHack2020
+
 ## Inspiration
 - We have always found the act of making and curating your playlists tedious and inefficient. It would be great if a single desktop app could curate and add to several playlists overtime dedicated to a particular mood
+
 ## What it does
- - for this project, our goal was to prove this idea and narrow our scope to processing user data in the form of entries and develop a method that would gauge the overall mood/tone of the user journal entry. then after determining the mood and tone of the journal entry for that day we would use the lyrics genius API to look for songs that fit the same overall tone and mood as the entry
+ - for this project, our goal was to prove this idea and narrow our scope to processing user data in the form of entries and develop a method that would gauge the overall mood/tone of the user journal entry. We did this using the Microsoft Azure Analytical API. We then take in an artist suggestion and use the lyrics genius API to look for songs that fit the same overall tone and mood as the entry and recommend that song.
 
 ## How We built it
-- we developed this project in python 3. using mostly standard library save for the nltk library we used to process user data by comparing words in their journal entry to synonymous words to help calculate tone
+- we developed this project in python 3. using mostly Microsoft's Azure anylytical API and Genius Lyrics API to predict the user's mood, take artist suggestion, and then recommend a song to them that best fits their mood. Our gui was made from the Tkinter library and we imported numpy arrays to hold artists and song lyrics. 
 
 ## Challenges We ran into
 - What we soon realized as a team is the act of trying to process natural language is really hard. While we did have some issues working with and testing out different API we found that processing the user data to be the biggest challenge. Next was the issue of developing some consistent way of gauging the tone/mood for a given entry. we needed to develop a systematic way of accessing tone in a way that wasn't arbitrary. 
